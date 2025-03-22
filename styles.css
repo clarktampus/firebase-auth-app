@@ -6,21 +6,20 @@
     font-family: Arial, sans-serif;
 }
 
-/* Default background for login page (index.html) */
+/* Default background for login page */
 body {
-    background-image: url('background.jpg'); /* Login page background */
+    background-image: url('background.jpg'); /* Background for login page */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /* Apply different background ONLY for dashboard.html */
-#dashboard {
-    background-image: url('profile-bg.jpg'); /* Profile page background */
+.dashboard-page {
+    background-image: url('profile-bg.jpg') !important; /* Profile page background */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Ensure it covers the whole screen */
 }
 
 /* Form container */
@@ -47,7 +46,7 @@ input {
 #login-box button {
     width: 100%;
     padding: 10px;
-    background: #050505; /* Green */
+    background: #050505;
     color: white;
     border: none;
     border-radius: 5px;
@@ -56,14 +55,14 @@ input {
 }
 
 #login-box button:hover {
-    background: #080808; /* Darker Green */
+    background: #080808;
 }
 
 /* Create Account Button */
 #signup-box button {
     width: 100%;
     padding: 10px;
-    background: #030303; /* Red */
+    background: #030303;
     color: white;
     border: none;
     border-radius: 5px;
@@ -72,27 +71,27 @@ input {
 }
 
 #signup-box button:hover {
-    background: #080808; /* Darker Red */
+    background: #080808;
 }
 
 /* Adjusting the lower text positioning */
 .lower-text {
-    margin-top: 30px; /* Moves text lower */
+    margin-top: 30px;
     font-size: 14px;
-    color: white; /* Ensures visibility */
+    color: white;
     text-align: center;
     display: block;
 }
 
 /* Links for switching between login & signup */
 .lower-text a {
-    color: #fffffe; /* Yellow color for links */
+    color: #fffffe;
     text-decoration: none;
     font-weight: bold;
 }
 
 .lower-text a:hover {
-    color: #ffffff; /* Darker yellow on hover */
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -100,4 +99,5 @@ input {
 .hidden {
     display: none;
 }
+
 
