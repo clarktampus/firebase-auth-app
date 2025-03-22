@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="login-box">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+        <button onclick="loginUser()">Login</button>
+        <p class="lower-text">Don't have an account? <a href="#" onclick="showSignup()">Create Account</a></p>
+    </div>
+
+    <div class="container hidden" id="signup-box">
+        <h2>Create Account</h2>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <input type="password" id="signup-password" placeholder="Create a password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm password" required>
+        <button onclick="registerUser()">Create Account</button>
+        <p class="lower-text">Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

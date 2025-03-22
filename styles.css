@@ -1,0 +1,96 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background styling */
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.container {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Form input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Button */
+#login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #050505; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-box button:hover {
+    background: #080808; /* Darker Green */
+}
+
+/* Create Account Button */
+#signup-box button {
+    width: 100%;
+    padding: 10px;
+    background: #030303; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#signup-box button:hover {
+    background: #080808; /* Darker Red */
+}
+
+/* Adjusting the lower text positioning */
+.lower-text {
+    margin-top: 30px; /* Moves text lower */
+    font-size: 14px;
+    color: white; /* Ensures visibility */
+    text-align: center;
+    display: block;
+}
+
+/* Links for switching between login & signup */
+.lower-text a {
+    color: #fffffe; /* Yellow color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lower-text a:hover {
+    color: #ffffff; /* Darker yellow on hover */
+    text-decoration: underline;
+}
+
+/* Hide signup box by default */
+.hidden {
+    display: none;
+}
+
