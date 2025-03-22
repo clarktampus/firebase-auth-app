@@ -6,14 +6,21 @@
     font-family: Arial, sans-serif;
 }
 
-/* Background styling */
+/* Default background for login page (index.html) */
 body {
-    background: url('background.jpg') no-repeat center center fixed;
+    background-image: url('background.jpg'); /* Login page background */
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Apply different background ONLY for dashboard.html */
+#dashboard {
+    background-image: url('profile-bg.jpg'); /* Profile page background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure it covers the whole screen */
 }
 
 /* Form container */
