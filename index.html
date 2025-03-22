@@ -32,6 +32,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
+            text-align: center; /* Center the content inside the container */
         }
 
         /* Form input fields */
@@ -73,13 +74,14 @@
             text-decoration: underline;
         }
 
-        /* To hide the sign-up box initially */
+        /* Hide the signup box initially */
         .hidden {
             display: none;
         }
     </style>
 </head>
 <body>
+    <!-- Login Form -->
     <div class="container" id="login-box">
         <h2>Login</h2>
         <input type="email" id="login-email" placeholder="Enter your email" required>
@@ -88,6 +90,7 @@
         <p class="lower-text">Don't have an account? <a href="#" onclick="showSignup()">Create Account</a></p>
     </div>
 
+    <!-- Signup Form (Initially Hidden) -->
     <div class="container hidden" id="signup-box">
         <h2>Create Account</h2>
         <input type="email" id="signup-email" placeholder="Enter your email" required>
@@ -99,5 +102,29 @@
 
     <!-- Firebase Scripts -->
     <script type="module" src="script.js"></script>
+
+    <script>
+        // Toggle between login and signup forms
+        function showSignup() {
+            document.getElementById('login-box').classList.add('hidden');
+            document.getElementById('signup-box').classList.remove('hidden');
+        }
+
+        function showLogin() {
+            document.getElementById('signup-box').classList.add('hidden');
+            document.getElementById('login-box').classList.remove('hidden');
+        }
+
+        // Mock functions for login and signup
+        function loginUser() {
+            // Implement login logic here (e.g., Firebase auth)
+            alert("Login functionality is not implemented yet.");
+        }
+
+        function registerUser() {
+            // Implement registration logic here (e.g., Firebase auth)
+            alert("Signup functionality is not implemented yet.");
+        }
+    </script>
 </body>
 </html>
